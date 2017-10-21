@@ -101,7 +101,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -154,12 +154,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="includes\inputreader.h" />
+    <ClInclude Include="includes\inputtypes.h" />
     <ClInclude Include="includes\stdafx.h" />
     <ClInclude Include="includes\targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ccc.cpp" />
     <ClCompile Include="src\inputreader.cpp" />
+    <ClCompile Include="src\inputtypes.cpp" />
     <ClCompile Include="src\stdafx.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
